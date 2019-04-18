@@ -1,0 +1,143 @@
+<html>
+<head>
+        <% include header%>
+      <!------ Include the above in your HEAD tag ---------->
+   <title>Inventories</title>
+  
+    </head>
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+ul{
+  list-style-type: none;
+}
+.pro{
+  float: left;
+}
+.sidenav {
+  height: 100%;
+  width: 12%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.sidenav1 {
+  height: 100%;
+  width:15%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav1 a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav1 a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav1 {padding-top: 15px;}
+  .sidenav1 a {font-size: 18px;}
+}
+</style>
+
+<body>
+<!-- left nav bar -->
+<div class="sidenav"class="mb4">
+  <a href="http://localhost:3000/dashboard">Dashboard</a>
+  <a href="http://localhost:3000/member">Members</a>
+  <a href="http://localhost:3000/project">Projects</a>
+  <a href="http://localhost:3000/events">Events</a>
+  <a href="http://localhost:3000/sponsers">Sponsers</a>
+  <a href="http://localhost:3000/achievements">Achievements</a>
+  <a href="http://localhost:3000/inventory">Inventory</a>
+  <a href="http://localhost:3000/table">Table</a>
+</div>
+
+
+<!-- right nav bar -->
+<div class="sidenav1"class="mb4">
+  
+ <a href="http://localhost:3000/inventory_add_item">
+          <span class="glyphicon glyphicon-plus"></span>  Inventory</a>  
+ <button class="btn btn-danger" ><a href="http://localhost:3000/logout" style="color:white">Log Out</a></button> 
+  
+</div>
+
+<div class="container"class="mb4">
+  
+    <CENTER><H1>INVENTORY</H1></CENTER>
+    <BR><BR>
+    <CENTER>
+    <table width='80%' border="4";>
+      <tr style='text-align:left;background-color:#CCC '>
+        <th>ID</th>
+        <th>ITEM</th>
+        <TH>INITIAL QUANTITY</TH>
+        <TH>REMAINING QUANTITY</TH>
+      </tr>
+    
+     <%inventory.forEach(function(inventory){%>
+     <br>
+     <tr>
+     <td><%=inventory.id%></td>
+     <td><%=inventory.item%></d>
+     <td><%=inventory.initial_quantity%></td>
+     <td><%=inventory.remaining_quantity%></td>
+     </tr>
+   <%});%>
+
+    </table>
+  </CENTER>
+  </div>
+</div>
+  
+
+</body>
+
+</html>
