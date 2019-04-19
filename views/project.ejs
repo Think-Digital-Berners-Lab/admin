@@ -109,27 +109,27 @@ margin-bottom: 30px
 <div class="sidenav" style="font-family:'Anton', sans-serif;text-align:center">
     <h2 style="color:#ff4757">ADMIN PANEL</h2>
     <hr >
-    <a href="http://localhost:3000/dashboard" class="btn btn-default">Dashboard</a>
-    <a href="http://localhost:3000/member">Members</a>
+    <a href="http://infigp.in:3000/dashboard" class="btn btn-default">Dashboard</a>
+    <a href="http://infigp.in:3000/member">Members</a>
     
-    <a href="http://localhost:3000/project" class="btn btn-default">Projects</a>
+    <a href="http://infigp.in:3000/project" class="btn btn-default">Projects</a>
     
-    <a href="http://localhost:3000/events" class="btn btn-default">Events</a>
+    <a href="http://infigp.in:3000/events" class="btn btn-default">Events</a>
     
-    <a href="http://localhost:3000/sponsers" class="btn btn-default">Sponsors</a>
+    <a href="http://infigp.in:3000/sponsers" class="btn btn-default">Sponsors</a>
 
-    <a href="http://localhost:3000/achievements" class="btn btn-default">achievements</a>
+    <a href="http://infigp.in:3000/achievements" class="btn btn-default">achievements</a>
 
-    <a href="http://localhost:3000/inventory" class="btn btn-default">inventory</a>
+    <a href="http://infigp.in:3000/inventory" class="btn btn-default">inventory</a>
 
-    <a href="http://localhost:3000/table" class="btn btn-default">table</a>
+    <a href="http://infigp.in:3000/table" class="btn btn-default">table</a>
 
   </div>
 
 <!-- right nav bar -->
 <div class="sidenav1" style="font-family:'Anton', sans-serif;">
-<a href="http://localhost:3000/add_new_project" class="btn btn-default">add new project</a>
-<button class="btn btn-danger" ><a href="http://localhost:3000/logout" style="color:white">logout</a></button> 
+<a href="http://infigp.in:3000/add_new_project" class="btn btn-default">add new project</a>
+<button class="btn btn-danger" ><a href="http://infigp.in:3000/logout" style="color:white">logout</a></button> 
 
 </div>
   <br><br>
@@ -144,9 +144,9 @@ margin-bottom: 30px
             <h1 style="font-family:'Anton', sans-serif">Project</h3>
               <br>
             <%if(project.pimg7!=null){%>
-            <img src="http://localhost:3000/images/<%=project.pimg7%>"style="width:100px;height:80px;"  class="img-square img-responsive">
+            <img src="http://infigp.in:3000/images/<%=project.pimg7%>"style="width:100px;height:80px;"  class="img-square img-responsive">
             <%};%>
-            <a href="http://localhost:3000/upload_image1/<%=project.project_name%>"class="btn btn-dark">Upload Image</a>
+            <a href="http://infigp.in:3000/upload_image1/<%=project.project_name%>"class="btn btn-dark">Upload Image</a>
             <br><br><h4><%=project.project_name%></h4>
             <br><br><br>
         </div>
@@ -161,9 +161,9 @@ margin-bottom: 30px
                     <%if(project.member1!=0){%>
                     <li>
                       <%if(project.pimg1!=0){%>
-                        <img src="http://localhost:3000/images/<%=project.pimg1%>"style="width:30px;height:30px;" class="pro"  class="img-circle img-responsive">&nbsp;
+                        <img src="http://infigp.in:3000/images/<%=project.pimg1%>"style="width:30px;height:30px;" class="pro"  class="img-circle img-responsive">&nbsp;
                         <%};%>
-                        <a href="http://localhost:3000/upload_image2/<%=project.project_name%>"class="btn btn-dark">Upload Image</a>
+                        <a href="http://infigp.in:3000/upload_image2/<%=project.project_name%>"class="btn btn-dark">Upload Image</a>
                         <h5><%=project.member1%></h5> 
                         
                     </li>
@@ -172,9 +172,9 @@ margin-bottom: 30px
                     <%if(project.member2.length>0){%>
                     <li>
                         <%if(project.pimg2!=0){%>
-                          <img src="http://localhost:3000/images/<%=project.pimg2%>"style="width:30px;height:30px;" class="pro"  class="img-circle img-responsive">&nbsp;
+                          <img src="http://infigp.in:3000/images/<%=project.pimg2%>"style="width:30px;height:30px;" class="pro"  class="img-circle img-responsive">&nbsp;
                           <%};%>
-                          <a href="http://localhost:3000/upload_image3/<%=project.project_name%>"class="btn btn-dark">Upload Image</a>
+                          <a href="http://infigp.in:3000/upload_image3/<%=project.project_name%>"class="btn btn-dark">Upload Image</a>
                           <h5><%=project.member2%></h5> 
                           
                       </li>
@@ -183,9 +183,9 @@ margin-bottom: 30px
                     <%if(project.member3.length>0){%>
                     <li>
                         <%if(project.pimg3!=0){%>
-                          <img src="http://localhost:3000/images/<%=project.pimg3%>"style="width:30px;height:30px;" class="pro"  class="img-circle img-responsive">&nbsp;
+                          <img src="http://infigp.in:3000/images/<%=project.pimg3%>"style="width:30px;height:30px;" class="pro"  class="img-circle img-responsive">&nbsp;
                           <%};%>
-                          <a href="http://localhost:3000/upload_image4/<%=project.project_name%>"class="btn btn-dark">Upload Image</a>
+                          <a href="http://infigp.in:3000/upload_image4/<%=project.project_name%>"class="btn btn-dark">Upload Image</a>
                           <h5><%=project.member3%></h5> 
                           
                       </li>
@@ -194,9 +194,9 @@ margin-bottom: 30px
                     <%if(project.member4.length>0){%>
                       <li>
                           <%if(project.pimg4!=0){%>
-                            <img src="http://localhost:3000/images/<%=project.pimg4%>"style="width:30px;height:30px;" class="pro"  class="img-circle img-responsive">&nbsp;
+                            <img src="http://infigp.in:3000/images/<%=project.pimg4%>"style="width:30px;height:30px;" class="pro"  class="img-circle img-responsive">&nbsp;
                             <%};%>
-                            <a href="http://localhost:3000/upload_image5/<%=project.project_name%>"class="btn btn-dark">Upload Image</a>
+                            <a href="http://infigp.in:3000/upload_image5/<%=project.project_name%>"class="btn btn-dark">Upload Image</a>
                             <h5><%=project.member4%></h5> 
                             
                         </li>
@@ -205,9 +205,9 @@ margin-bottom: 30px
                     <%if(project.member5.length>0){%>
                       <li>
                           <%if(project.pimg5!=0){%>
-                            <img src="http://localhost:3000/images/<%=project.pimg5%>"style="width:30px;height:30px;" class="pro"  class="img-circle img-responsive">&nbsp;
+                            <img src="http://infigp.in:3000/images/<%=project.pimg5%>"style="width:30px;height:30px;" class="pro"  class="img-circle img-responsive">&nbsp;
                             <%};%>
-                            <a href="http://localhost:3000/upload_image6/<%=project.project_name%>"class="btn btn-dark">Upload Image</a>
+                            <a href="http://infigp.in:3000/upload_image6/<%=project.project_name%>"class="btn btn-dark">Upload Image</a>
                             <h5><%=project.member5%></h5> 
                             
                         </li>
@@ -216,9 +216,9 @@ margin-bottom: 30px
                     <%if(project.member6.length>0){%>
                       <li>
                           <%if(project.pimg6!=0){%>
-                            <img src="http://localhost:3000/images/<%=project.pimg6%>"style="width:30px;height:30px;" class="pro"  class="img-circle img-responsive">&nbsp;
+                            <img src="http://infigp.in:3000/images/<%=project.pimg6%>"style="width:30px;height:30px;" class="pro"  class="img-circle img-responsive">&nbsp;
                             <%};%>
-                            <a href="http://localhost:3000/upload_image7/<%=project.project_name%>"class="btn btn-dark">Upload Image</a>
+                            <a href="http://infigp.in:3000/upload_image7/<%=project.project_name%>"class="btn btn-dark">Upload Image</a>
                             <h5><%=project.member6%></h5> 
                             
                         </li>
@@ -228,8 +228,8 @@ margin-bottom: 30px
                 </ul>
             </div>
           <div class="col-sm-1"><br>
-            <a href="http://localhost:3000/update_project/<%=project.project_name%>"class="btn btn-warning" style="width: 100px;height: 25px;margin-top: 50px;margin-bottom: 5px;color:#2f3542">Update</a>
-            <a href="http://localhost:3000/delete/<%=project.project_name%>"class="btn btn-danger" style="width: 100px;height: 25px;color: #2f3542">Delete</a>
+            <a href="http://infigp.in:3000/update_project/<%=project.project_name%>"class="btn btn-warning" style="width: 100px;height: 25px;margin-top: 50px;margin-bottom: 5px;color:#2f3542">Update</a>
+            <a href="http://infigp.in:3000/delete/<%=project.project_name%>"class="btn btn-danger" style="width: 100px;height: 25px;color: #2f3542">Delete</a>
           </div>
             <% }); %>
             
